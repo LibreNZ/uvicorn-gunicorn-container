@@ -1,21 +1,21 @@
-[![Test](https://github.com/tiangolo/uvicorn-gunicorn-docker/workflows/Test/badge.svg)](https://github.com/tiangolo/uvicorn-gunicorn-docker/actions?query=workflow%3ATest) [![Deploy](https://github.com/tiangolo/uvicorn-gunicorn-docker/workflows/Deploy/badge.svg)](https://github.com/tiangolo/uvicorn-gunicorn-docker/actions?query=workflow%3ADeploy)
+[![Test](https://github.com/LibreNZ/uvicorn-gunicorn-container/workflows/Test/badge.svg)](https://github.com/LibreNZ/uvicorn-gunicorn-container/actions?query=workflow%3ATest) [![Deploy](https://github.com/LibreNZ/uvicorn-gunicorn-container/workflows/Deploy/badge.svg)](https://github.com/LibreNZ/uvicorn-gunicorn-container/actions?query=workflow%3ADeploy)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`python3.10`, `latest` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.10.dockerfile)
-* [`python3.9`, _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.9.dockerfile)
-* [`python3.8`, _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.8.dockerfile)
-* [`python3.7`, _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.7.dockerfile)
-* [`python3.10-slim` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.10-slim.dockerfile)
-* [`python3.9-slim` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.9-slim.dockerfile)
-* [`python3.8-slim` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.8-slim.dockerfile)
+* [`python3.10`, `latest` _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.10.dockerfile)
+* [`python3.9`, _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.9.dockerfile)
+* [`python3.8`, _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.8.dockerfile)
+* [`python3.7`, _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.7.dockerfile)
+* [`python3.10-slim` _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.10-slim.dockerfile)
+* [`python3.9-slim` _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.9-slim.dockerfile)
+* [`python3.8-slim` _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.8-slim.dockerfile)
 
 ## Discouraged tags
 
-* [`python3.10-alpine3.15` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.10-alpine3.15.dockerfile)
-* [`python3.9-alpine3.14` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.9-alpine3.14.dockerfile)
-* [`python3.8-alpine3.10` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.8-alpine3.10.dockerfile)
-* [`python3.7-alpine3.8` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/python3.7-alpine3.8.dockerfile)
+* [`python3.10-alpine3.15` _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.10-alpine3.15.dockerfile)
+* [`python3.9-alpine3.14` _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.9-alpine3.14.dockerfile)
+* [`python3.8-alpine3.10` _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.8-alpine3.10.dockerfile)
+* [`python3.7-alpine3.8` _(Dockerfile)_](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/python3.7-alpine3.8.dockerfile)
 
 To learn more about why Alpine images are discouraged for Python read the note at the end: [🚨 Alpine Python Warning](#-alpine-python-warning).
 
@@ -27,7 +27,7 @@ To learn more about why Alpine images are discouraged for Python read the note a
 
 [**Docker**](https://www.docker.com/) image with [**Uvicorn**](https://www.uvicorn.org/) managed by [**Gunicorn**](https://gunicorn.org/) for high-performance web applications in **[Python](https://www.python.org/) 3.7 and above** with performance auto-tuning. Optionally in a slim version or based on Alpine Linux.
 
-**GitHub repo**: [https://github.com/tiangolo/uvicorn-gunicorn-docker](https://github.com/tiangolo/uvicorn-gunicorn-docker)
+**GitHub repo**: [https://github.com/LibreNZ/uvicorn-gunicorn-container](https://github.com/LibreNZ/uvicorn-gunicorn-container)
 
 **Docker Hub image**: [https://hub.docker.com/r/tiangolo/uvicorn-gunicorn/](https://hub.docker.com/r/tiangolo/uvicorn-gunicorn/)
 
@@ -300,7 +300,7 @@ You can set it like:
 docker run -d -p 80:80 -e GUNICORN_CONF="/app/custom_gunicorn_conf.py" myimage
 ```
 
-You can use the [config file](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/gunicorn_conf.py) from this image as a starting point for yours.
+You can use the [config file](https://github.com/LibreNZ/uvicorn-gunicorn-container/blob/master/docker-images/gunicorn_conf.py) from this image as a starting point for yours.
 
 #### `WORKERS_PER_CORE`
 
@@ -669,21 +669,21 @@ All the image tags, configurations, environment variables and application option
 
 ### Latest Changes
 
-* 📝 Add note to discourage Alpine with Python. PR [#96](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/96) by [@tiangolo](https://github.com/tiangolo).
-* 📝 Add warning for Kubernetes, when to use this image. PR [#95](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/95) by [@tiangolo](https://github.com/tiangolo).
-* ✏️ Fix typo duplicate "Note" in Readme. PR [#92](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/92) by [@tiangolo](https://github.com/tiangolo).
-* 📌 Add external dependencies and Dependabot to get automatic upgrade PRs. PR [#84](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/84) by [@tiangolo](https://github.com/tiangolo).
-* 👷 Update Latest Changes. PR [#83](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/83) by [@tiangolo](https://github.com/tiangolo).
-* ✨ Add Python 3.9 and Alpine Python 3.9. PR [#52](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/52) by [@graue70](https://github.com/graue70).
-* 🔥 Remove unused Travis and old GitHub Actions configs. PR [#56](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/56) by [@tiangolo](https://github.com/tiangolo).
-* ✏️ Fix typo (type annotation) in tests. PR [#55](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/55) by [@tiangolo](https://github.com/tiangolo).
-* 👷 Add GitHub Action latest-changes, update issue-manager, add funding. PR [#53](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/53) by [@tiangolo](https://github.com/tiangolo).
-* ⬆️ Install uvicorn[standard] to include uvloop and Gunicorn support. PR [#54](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/54) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Add note to discourage Alpine with Python. PR [#96](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/96) by [@tiangolo](https://github.com/tiangolo).
+* 📝 Add warning for Kubernetes, when to use this image. PR [#95](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/95) by [@tiangolo](https://github.com/tiangolo).
+* ✏️ Fix typo duplicate "Note" in Readme. PR [#92](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/92) by [@tiangolo](https://github.com/tiangolo).
+* 📌 Add external dependencies and Dependabot to get automatic upgrade PRs. PR [#84](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/84) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Update Latest Changes. PR [#83](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/83) by [@tiangolo](https://github.com/tiangolo).
+* ✨ Add Python 3.9 and Alpine Python 3.9. PR [#52](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/52) by [@graue70](https://github.com/graue70).
+* 🔥 Remove unused Travis and old GitHub Actions configs. PR [#56](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/56) by [@tiangolo](https://github.com/tiangolo).
+* ✏️ Fix typo (type annotation) in tests. PR [#55](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/55) by [@tiangolo](https://github.com/tiangolo).
+* 👷 Add GitHub Action latest-changes, update issue-manager, add funding. PR [#53](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/53) by [@tiangolo](https://github.com/tiangolo).
+* ⬆️ Install uvicorn[standard] to include uvloop and Gunicorn support. PR [#54](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/54) by [@tiangolo](https://github.com/tiangolo).
 ### 0.6.0
 
-* Add docs about installing and pinning dependencies. PR [#41](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/41).
-* Add `slim` version. PR [#40](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/40).
-* Remove leftover unneeded config for tests. PR [#39](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/39).
+* Add docs about installing and pinning dependencies. PR [#41](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/41).
+* Add `slim` version. PR [#40](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/40).
+* Remove leftover unneeded config for tests. PR [#39](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/39).
 * Add extra configs, tests, and docs for:
     * `WORKER_CLASS`
     * `TIMEOUT`
@@ -693,34 +693,34 @@ All the image tags, configurations, environment variables and application option
     * `ERROR_LOG`
     * `GUNICORN_CMD_ARGS`
     * `MAX_WORKERS`
-    * PR [#38](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/38)
-* Set up CI using GitHub actions, they provide more free instances, so builds finish faster (4 min vs 9 min). PR [#37](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/37).
-* Add support for Python 3.8. PR [#36](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/36).
-* Refactor tests to remove custom testing Dockerfiles, generate them during tests. PR [#35](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/35).
-* Refactor and simplify build process to reduce code duplication. PR [#34](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/34).
-* Disable `pip` cache during installation with `--no-cache-dir`. PR [#13](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/13) by [@pmav99](https://github.com/pmav99).
-* Migrate local development from Pipenv to Poetry. PR [#31](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/31).
-* Add tests and docs for custom `PRE_START_PATH` env var. PR [#30](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/30).
-* Add support for custom `PRE_START_PATH` env var. PR [#12](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/12) by [@mgfinch](https://github.com/mgfinch).
+    * PR [#38](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/38)
+* Set up CI using GitHub actions, they provide more free instances, so builds finish faster (4 min vs 9 min). PR [#37](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/37).
+* Add support for Python 3.8. PR [#36](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/36).
+* Refactor tests to remove custom testing Dockerfiles, generate them during tests. PR [#35](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/35).
+* Refactor and simplify build process to reduce code duplication. PR [#34](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/34).
+* Disable `pip` cache during installation with `--no-cache-dir`. PR [#13](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/13) by [@pmav99](https://github.com/pmav99).
+* Migrate local development from Pipenv to Poetry. PR [#31](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/31).
+* Add tests and docs for custom `PRE_START_PATH` env var. PR [#30](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/30).
+* Add support for custom `PRE_START_PATH` env var. PR [#12](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/12) by [@mgfinch](https://github.com/mgfinch).
 
 ### 0.5.0
 
-* Refactor tests to use env vars and add image tags for each build date, like `tiangolo/uvicorn-gunicorn:python3.7-2019-10-15`. PR [#15](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/15).
-* Update Gunicorn worker heartbeat directory to `/dev/shm` to improve performance. PR [#9](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/9) by [@wshayes](https://github.com/wshayes).
-* Upgrade Travis. PR [#7](https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/7).
+* Refactor tests to use env vars and add image tags for each build date, like `tiangolo/uvicorn-gunicorn:python3.7-2019-10-15`. PR [#15](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/15).
+* Update Gunicorn worker heartbeat directory to `/dev/shm` to improve performance. PR [#9](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/9) by [@wshayes](https://github.com/wshayes).
+* Upgrade Travis. PR [#7](https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/7).
 
 ### 0.4.0
 
-* Add support for live auto-reload with an additional custom script `/start-reload.sh`, check the [updated documentation](https://github.com/tiangolo/uvicorn-gunicorn-docker#development-live-reload). PR <a href="https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/6" target="_blank">#6</a>.
+* Add support for live auto-reload with an additional custom script `/start-reload.sh`, check the [updated documentation](https://github.com/LibreNZ/uvicorn-gunicorn-container#development-live-reload). PR <a href="https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/6" target="_blank">#6</a>.
 
 ### 0.3.0
 
 * Set `WORKERS_PER_CORE` by default to `1`, as it shows to have the best performance on benchmarks.
-* Make the default web concurrency, when `WEB_CONCURRENCY` is not set, to a minimum of 2 workers. This is to avoid bad performance and blocking applications (server application) on small machines (server machine/cloud/etc). This can be overridden using `WEB_CONCURRENCY`. This applies for example in the case where `WORKERS_PER_CORE` is set to `1` (the default) and the server has only 1 CPU core. PR <a href="https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/5" target="_blank">#5</a>.
+* Make the default web concurrency, when `WEB_CONCURRENCY` is not set, to a minimum of 2 workers. This is to avoid bad performance and blocking applications (server application) on small machines (server machine/cloud/etc). This can be overridden using `WEB_CONCURRENCY`. This applies for example in the case where `WORKERS_PER_CORE` is set to `1` (the default) and the server has only 1 CPU core. PR <a href="https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/5" target="_blank">#5</a>.
 
 ### 0.2.0
 
-* Make `/start.sh` run independently, reading and generating used default environment variables. And remove `/entrypoint.sh` as it doesn't modify anything in the system, only reads environment variables. PR <a href="https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/4" target="_blank">#4</a>.
+* Make `/start.sh` run independently, reading and generating used default environment variables. And remove `/entrypoint.sh` as it doesn't modify anything in the system, only reads environment variables. PR <a href="https://github.com/LibreNZ/uvicorn-gunicorn-container/pull/4" target="_blank">#4</a>.
 
 ### 0.1.2
 
