@@ -1,5 +1,7 @@
 FROM python:3.8
 
+ARG GIT_URL=local
+LABEL org.opencontainers.image.source=$GIT_URL
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
 

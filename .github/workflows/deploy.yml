@@ -71,6 +71,7 @@ jobs:
           context: docker-images/
           push: ${{ github.event_name != 'pull_request' }}
           file: docker-images/${{ matrix.image.name }}.dockerfile
+          build-args: GIT_URL=${{ github.repositoryUrl }}
           tags: |
             ${{ env.REGISTRY }}/${{ env.REPO_SOURCE }}/uvicorn-gunicorn:${{ matrix.image.name }}-${{ env.CI_GITHUB_SHA_SHORT }}
             ${{ env.REGISTRY }}/${{ env.REPO_SOURCE }}/uvicorn-gunicorn:${{ matrix.image.name }}-latest
