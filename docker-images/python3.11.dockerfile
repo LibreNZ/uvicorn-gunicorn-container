@@ -1,4 +1,7 @@
-FROM python:3.9
+FROM python:3.11
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 ARG GIT_URL=local
 LABEL org.opencontainers.image.source=$GIT_URL
